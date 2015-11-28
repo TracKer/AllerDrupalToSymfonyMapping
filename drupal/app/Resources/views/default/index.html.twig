@@ -1,5 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <p>Hello</p>
+    <ul>
+        {% for article in articles %}
+            <li>{{ article.body }} ({{ article.id }})</li>
+        {% endfor %}
+    </ul>
 {% endblock %}

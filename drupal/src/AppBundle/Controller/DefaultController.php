@@ -18,8 +18,9 @@ class DefaultController extends Controller
         10
       );
 
-      return $this->render('default/index.html.twig');
-
+      return $this->render('default/index.html.twig', array(
+        'articles' => $articles,
+      ));
 
     }
 }
