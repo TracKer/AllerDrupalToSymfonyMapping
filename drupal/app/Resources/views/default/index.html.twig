@@ -1,9 +1,13 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    {% autoescape false %}
     <ul>
         {% for article in articles %}
+
             <li>{{ article.body[0].value }} ({{ article.id }})</li>
         {% endfor %}
     </ul>
+    {% endautoescape %}
+
 {% endblock %}
