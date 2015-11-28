@@ -49,6 +49,11 @@ class Node
   private $title;
 
   /**
+   * @ORM\OneToMany(targetEntity="FieldBody", mappedBy="field_data_body")
+   */
+  private $body;
+
+  /**
    * @return int
    */
   public function getVid() {
