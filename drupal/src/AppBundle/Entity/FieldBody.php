@@ -13,7 +13,7 @@ use AppBundle\Entity\Node;
  * @ORM\Table(
  *   name="field_data_body",
  *   uniqueConstraints={
- *     @UniqueConstraint(name="field_unique",columns={"entity_type,entity_id,deleted,delta,language"})
+ *     @ORM\UniqueConstraint(name="field_unique",columns={"entity_type,entity_id,deleted,delta,language"})
  *   }
  * )
  */
