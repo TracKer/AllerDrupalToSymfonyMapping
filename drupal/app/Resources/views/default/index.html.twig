@@ -3,7 +3,7 @@
 {% block body %}
     <ul>
         {% for article in articles %}
-            <li>{{ article.body }} ({{ article.id }})</li>
+            <li>{{ article.body[0].value }} ({{ article.id }})</li>
         {% endfor %}
     </ul>
 {% endblock %}

@@ -64,7 +64,7 @@ class Node
   }
 
   /**
-   * @ORM\OneToMany(targetEntity="FieldBody", mappedBy="field_data_body")
+   * @ORM\OneToMany(targetEntity="FieldBody", mappedBy="node")
    */
   private $body;
 
