@@ -50,6 +50,20 @@ class Node
   private $title;
 
   /**
+   * @return mixed
+   */
+  public function getBody() {
+    return $this->body;
+  }
+
+  /**
+   * @param mixed $body
+   */
+  public function setBody($body) {
+    $this->body = $body;
+  }
+
+  /**
    * @ORM\OneToMany(targetEntity="FieldBody", mappedBy="field_data_body")
    */
   private $body;

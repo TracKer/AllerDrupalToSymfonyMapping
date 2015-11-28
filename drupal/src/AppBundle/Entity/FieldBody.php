@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\UniqueConstraint;
 use AppBundle\Entity\Node;
 
 /**
@@ -30,6 +31,7 @@ class FieldBody
    * @var integer
    *
    * @ORM\Column(name="entity_id", type="integer")
+   * @ORM\Id()
    */
   private $entity_id;
 
@@ -146,7 +148,6 @@ class FieldBody
   }
 
   /**
-   * @Assert\NotBlank()
    * @ORM\ManyToOne(targetEntity="Node", inversedBy="body")
    * @ORM\JoinColumn(name="entity_id", referencedColumnName="nid")
    */
