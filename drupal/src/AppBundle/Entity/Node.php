@@ -4,6 +4,7 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine;
+use AppBundle\Entity\FieldBody;
 
 /**
  * Node
